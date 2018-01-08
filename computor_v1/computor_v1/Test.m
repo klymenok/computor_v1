@@ -4,8 +4,8 @@
 @implementation Test
 
 - (void)test: (int) n {
-    Expression *test = [[Expression alloc] init];
-    [test solution];
+//    Expression *test = [[Expression alloc] init];
+//    [test solution];
 }
 
 @end

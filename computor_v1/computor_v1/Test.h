@@ -1,7 +1,9 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface Test : NSObject
+@interface Test : NSObject {
+}
+
 
 - (void) test: (int) n;
 
