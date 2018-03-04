@@ -9,8 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface ViewController : NSViewController {
+    int         _coords;
+    NSString    *complexity;
 }
-@property NSString *complexity;
+@property int complexity;
+@property int coords;
 
 @property (weak) IBOutlet NSTextField *x0;
 @property (weak) IBOutlet NSTextField *x1;
@@ -21,6 +24,6 @@
 @property (weak) IBOutlet NSTextField *complexityLabel;
 @property (weak) IBOutlet NSTextFieldCell *complexityFeild;
 - (IBAction)applyComplexity:(NSButton *)sender;
-- (NSTextField *)createTextField:(NSString *)stringValue editable:(BOOL)editable withCoord:(int)coord_y;
+- (NSTextField *)createTextField:(NSString *)stringValue editable:(BOOL)editable withWidth:(int)width;
 
 @end
